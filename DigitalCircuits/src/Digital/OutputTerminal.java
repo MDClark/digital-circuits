@@ -16,7 +16,7 @@ import java.beans.PropertyChangeSupport;
 public class OutputTerminal implements Terminal {
 
     private boolean value;
-    public static final String PROP_VALUE = "value";
+    public static final String PROP_VALUE = "Value";
 
     /**
      * Get the value of value
