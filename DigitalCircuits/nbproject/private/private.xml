@@ -5,11 +5,10 @@
         <group>
             <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/src/Digital/XORGate.java</file>
             <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/src/Digital/ANDGate.java</file>
-            <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/test/Digital/OutputTerminalTest.java</file>
-            <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/test/Digital/XORGateTest.java</file>
-            <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/test/Digital/ORGateTest.java</file>
+            <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/src/Digital/Pin.java</file>
+            <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/src/Digital/UnaryGate.java</file>
             <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/src/Digital/ORGate.java</file>
-            <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/src/Digital/OutputTerminal.java</file>
+            <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/src/Digital/NOTGate.java</file>
             <file>file:/C:/Users/Jordan/Desktop/digital-circuits/DigitalCircuits/src/Digital/BinaryGate.java</file>
         </group>
     </open-files>

@@ -18,6 +18,7 @@ public class XORGate extends BinaryGate {
      */
     @Override
     protected void recompute() {
-        output.setValue(getTerminalValue(Input0) ^ getTerminalValue(Input1));
+         this.getOutput().setValue(
+                getTerminalValue(this.getInput0()) ^ getTerminalValue(this.getInput1()));
     }
 }
