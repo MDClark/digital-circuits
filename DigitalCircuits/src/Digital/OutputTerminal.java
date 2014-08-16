@@ -47,7 +47,6 @@ public class OutputTerminal implements Terminal {
      */
     @Override
     public void addPropertyChangeListener(PropertyChangeListener listener) {
-        System.out.println("IN ADDPROPERTYCHANGELISTENER");
         propertyChangeSupport.addPropertyChangeListener(listener);
     }
 
