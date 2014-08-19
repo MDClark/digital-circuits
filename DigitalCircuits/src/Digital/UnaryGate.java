@@ -11,7 +11,7 @@ import java.beans.PropertyChangeListener;
  * @author Jordan
  */
 public abstract class UnaryGate extends javax.swing.JPanel implements PropertyChangeListener {
-    // Image representation of AND gate
+    // Image representation of a gate
     private final Image image;
 
     // Single output terminal
@@ -26,11 +26,11 @@ public abstract class UnaryGate extends javax.swing.JPanel implements PropertyCh
      * @param imageLocation the location of the image to use
      */
     public UnaryGate(String imageLocation) {
-        /// Grab image for visual representation of ANDGate
+        /// Grab image for visual representation of a gate
         java.net.URL url = getClass().getResource(imageLocation);
         image = new javax.swing.ImageIcon(url).getImage();
 
-        // resize component to match image
+        // Resize component to match image
         this.setSize(image.getWidth(null), image.getHeight(null));
     }
 
