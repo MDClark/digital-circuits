@@ -10,7 +10,7 @@ public class Pin extends UnaryGate {
      * Creates a Pin object and sets it's image
      */
     public Pin() {
-        super("images/Pin.gif");
+        super("images/PIN.gif");
     }
 
     /**

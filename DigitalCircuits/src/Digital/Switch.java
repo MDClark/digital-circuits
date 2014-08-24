@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Digital;
 
 /**
@@ -11,30 +10,27 @@ package Digital;
  * @author Jordan
  */
 public class Switch extends javax.swing.JPanel {
-     // output value
-    private final OutputTerminal output = new OutputTerminal();
 
-    /**
-     * Testing main for Switch
-     * TODO - remove!
-     * @param args 
-     */
-    public static void main(String args[]){
-        javax.swing.JFrame f = new javax.swing.JFrame();
-        f.add(new Switch(), java.awt.BorderLayout.CENTER);
-        f.pack();
-        f.setVisible(true);
-        f.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-    }
+    // output value
+    public final OutputTerminal output = new OutputTerminal();
     
     /**
      * Creates new form Switch
      */
     public Switch() {
         initComponents();
-        
+
         // switch is initially off
         output.setValue(false);
+    }
+
+    /**
+     * Get the value of output
+     *
+     * @return the value of output
+     */
+    public OutputTerminal getOutput() {
+        return output;
     }
 
     /**

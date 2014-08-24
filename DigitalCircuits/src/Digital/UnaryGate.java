@@ -65,7 +65,7 @@ public abstract class UnaryGate extends javax.swing.JPanel implements PropertyCh
     /**
      * Set the value of input0
      *
-     * @param Input0 new value of input0
+     * @param input0 new value of input0
      */
     public void setInput0(Terminal input0) {
         this.input0 = input0;
