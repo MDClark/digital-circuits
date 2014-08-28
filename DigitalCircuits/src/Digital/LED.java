@@ -46,7 +46,16 @@ public class LED extends javax.swing.JPanel {
     public void setInput(Terminal input) {
         this.input = input;
     }
-
+    
+    /**
+     * Get the value of input
+     * 
+     * @return the value of input
+     */
+    public Terminal getInput() {
+        return input;
+    }
+    
     /**
      * Paints LED to screen
      *
@@ -66,6 +75,7 @@ public class LED extends javax.swing.JPanel {
 
     /**
      * Triggers a call to paintComponent to repaint the LED
+     *
      * @param g the Graphics object to protect
      */
     public void repaint(java.awt.Graphics g) {
