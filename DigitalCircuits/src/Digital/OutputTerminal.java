@@ -1,31 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Digital;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
 /**
+ * Concrete implementation of the Terminal interface.
  *
- * @author Clarky
+ * Used for storing and retrieving the a boolean value, and notifying the system of updates to the
+ * value.
+ *
+ * @author Jordan Hennell n8331472
+ * @author Michael Clark n8583331
  */
 public class OutputTerminal implements Terminal {
 
+    // Bound property for OutputTerminal's value
     private boolean value;
     public static final String PROP_VALUE = "Value";
-
-    /**
-     * Get the value of value
-     *
-     * @return the value of value
-     */
-    public boolean isValue() {
-        return value;
-    }
+    private transient final PropertyChangeSupport propertyChangeSupport
+            = new PropertyChangeSupport(this);
 
     /**
      * Set the value of value
@@ -37,8 +30,6 @@ public class OutputTerminal implements Terminal {
         this.value = value;
         propertyChangeSupport.firePropertyChange(PROP_VALUE, oldValue, value);
     }
-
-    private transient final PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 
     /**
      * Add PropertyChangeListener.
@@ -60,9 +51,13 @@ public class OutputTerminal implements Terminal {
         propertyChangeSupport.removePropertyChangeListener(listener);
     }
 
+    /**
+     * Get the value of value
+     *
+     * @return the value of value
+     */
     @Override
     public boolean getValue() {
         return value;
     }
-
 }

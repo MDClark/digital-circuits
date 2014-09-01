@@ -1,17 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Digital;
 
 /**
  *
- * @author Jordan
+ * @author Jordan Hennell n8331472
+ * @author Michael Clark n8583331
  */
 public class Switch extends javax.swing.JPanel {
 
-    // output value
+    // Output value
     public final OutputTerminal output = new OutputTerminal();
     
     /**
@@ -20,7 +16,7 @@ public class Switch extends javax.swing.JPanel {
     public Switch() {
         initComponents();
 
-        // switch is initially off
+        // Switch is initially off
         output.setValue(false);
     }
 

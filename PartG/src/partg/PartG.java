@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package partg;
 
 /**
  *
- * @author Clarky
+ * @author Jordan Hennell n8331472
+ * @author Michael Clark n8583331
  */
 public class PartG extends javax.swing.JFrame {
 

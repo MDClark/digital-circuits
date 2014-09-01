@@ -3,9 +3,11 @@ package Digital;
 import java.awt.Image;
 
 /**
- * LED component generates raw input and is used to display output states
+ * The LED component is used to visually represent gate outputs. It accepts only one input and 
+ * visualises it as on or off depending on the value provided.
  *
- * @author n8331472
+ * @author Jordan Hennell n8331472
+ * @author Michael Clark n8583331
  */
 public class LED extends javax.swing.JPanel {
 
@@ -20,9 +22,10 @@ public class LED extends javax.swing.JPanel {
             offImageLocation = "images/LED_off.gif";
 
     /**
-     * Creates an LED object and sets intialises its images
+     * Creates an LED object and intialises its images
      */
     public LED() {
+        
         // Initialise image urls
         java.net.URL onImageUrl = getClass().getResource(onImageLocation);
         java.net.URL offImageUrl = getClass().getResource(offImageLocation);
@@ -31,7 +34,7 @@ public class LED extends javax.swing.JPanel {
         onImage = new javax.swing.ImageIcon(onImageUrl).getImage();
         offImage = new javax.swing.ImageIcon(offImageUrl).getImage();
 
-        // Set current state
+        // Set current state, off is default
         currentImage = offImage;
 
         // Resize component to match image
@@ -63,7 +66,8 @@ public class LED extends javax.swing.JPanel {
      */
     @Override
     public void paintComponent(java.awt.Graphics g) {
-        // Get current state of LED and update currentImage
+        
+        // LED is set to off if a null value is provided, otherwise the input value sets the LED
         if (input != null && input.getValue()) {
             currentImage = onImage;
         } else {

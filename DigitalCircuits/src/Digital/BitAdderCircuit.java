@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Digital;
 
 /**
  *
- * @author Clarky
+ *
+ * @author Jordan Hennell n8331472
+ * @author Michael Clark n8583331
  */
 public class BitAdderCircuit extends javax.swing.JPanel {
 
@@ -24,22 +21,47 @@ public class BitAdderCircuit extends javax.swing.JPanel {
         initComponents();
     }
 
+    /**
+     * Get the Pin1 object
+     *
+     * @return pin1 instantiation
+     */
     public Pin getPin1() {
         return pin1;
     }
 
+    /**
+     * Get the Pin2 object
+     *
+     * @return pin2 instantiation
+     */
     public Pin getPin2() {
         return pin2;
     }
 
+    /**
+     * Get the Pin3 object
+     *
+     * @return pin3 instantiation
+     */
     public Pin getPin3() {
         return pin3;
     }
 
+    /**
+     * Get the Pin4 object
+     *
+     * @return pin4 instantiation
+     */
     public Pin getPin4() {
         return pin4;
     }
 
+    /**
+     * Get the Pin5 object
+     *
+     * @return pin5 instantiation
+     */
     public Pin getPin5() {
         return pin5;
     }

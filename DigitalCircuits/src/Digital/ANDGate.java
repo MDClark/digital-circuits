@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Digital;
 
 /**
- * An AND Gate is a type of Gate that outputs true iff both of the input values are true 
+ * An AND Gate is a type of Gate that outputs true iff both of the input values are true. 
  * 
- * @author Clarky
+ * @author Jordan Hennell n8331472
+ * @author Michael Clark n8583331
  */
 public class ANDGate extends BinaryGate {
 
@@ -19,11 +15,10 @@ public class ANDGate extends BinaryGate {
         super("images/AND.gif");
     }
 
-    /**
-     * Outputs true iff both of the input values are true
-     */
     @Override
     protected void recompute() {
+        
+        // Utilise the logical AND operator to set the value of the gate
         this.getOutput().setValue(
                 getTerminalValue(this.getInput0()) && getTerminalValue(this.getInput1()));
     }

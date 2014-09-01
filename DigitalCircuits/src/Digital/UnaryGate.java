@@ -5,27 +5,30 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 /**
- * A Unary Gate accepts one input and produces an output
- * The value of the output depends on the type of Unary Gate and the value of the input
+ * A Unary Gate accepts one input and produces an output.
+ * The value of the output depends on the type of Unary Gate and the value of the input.
  * 
- * @author Jordan
+ * @author Jordan Hennell n8331472
+ * @author Michael Clark n8583331
  */
 public abstract class UnaryGate extends javax.swing.JPanel implements PropertyChangeListener {
+    
     // Image representation of a gate
     private final Image image;
 
-    // Single output terminal
+    // Output of gate
     private final OutputTerminal output = new OutputTerminal();
 
-    // inputs
+    // Input to gate 
     private Terminal input0;
 
     /**
-     * Creates a UnaryGate object and sets it's image
+     * Creates a UnaryGate object and sets its image
      * 
      * @param imageLocation the location of the image to use
      */
     public UnaryGate(String imageLocation) {
+        
         /// Grab image for visual representation of a gate
         java.net.URL url = getClass().getResource(imageLocation);
         image = new javax.swing.ImageIcon(url).getImage();
@@ -69,7 +72,10 @@ public abstract class UnaryGate extends javax.swing.JPanel implements PropertyCh
      */
     public void setInput0(Terminal input0) {
         this.input0 = input0;
+        
         recompute();
+        
+        // Do not add a listener if the value is null
         if (input0 != null) {
             this.input0.addPropertyChangeListener(this);
         }
@@ -89,8 +95,9 @@ public abstract class UnaryGate extends javax.swing.JPanel implements PropertyCh
     
     /**
      * Returns the value of a terminal. A null value returns false.
+     * 
      * @param t the terminal to get the value of
-     * @return
+     * @return the value of the Terminal
      */
     protected boolean getTerminalValue(Terminal t) {
         if (t == null) {
@@ -102,8 +109,7 @@ public abstract class UnaryGate extends javax.swing.JPanel implements PropertyCh
     
     
     /**
-     * Determines the output of a UnaryGate
+     * Recalculate the output of a logic gate
      */
-    protected abstract void recompute();
-    
+    protected abstract void recompute();  
 }

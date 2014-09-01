@@ -9,8 +9,10 @@ import java.awt.Image;
 import javax.swing.JPanel;
 
 /**
- *
- * @author Clarky
+ * 
+ * 
+ * @author Jordan Hennell n8331472
+ * @author Michael Clark n8583331
  */
 public class BitAdderComponent extends JPanel {
 

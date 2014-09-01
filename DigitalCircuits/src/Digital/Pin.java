@@ -1,9 +1,11 @@
 package Digital;
 
 /**
- * A Pin is a type of Gate that outputs true iff the input is true
+ * A Pin reproduces the input it is given. A Pin takes only one input and outputs the value it is 
+ * given. 
  * 
- * @author Jordan
+ * @author Jordan Hennell n8331472
+ * @author Michael Clark n8583331
  */
 public class Pin extends UnaryGate {
     /**
@@ -18,6 +20,8 @@ public class Pin extends UnaryGate {
      */
     @Override
     protected void recompute() {
+        
+        // Set the value of the gate to the value of the input
          this.getOutput().setValue(getTerminalValue(this.getInput0()));
     }
 }
