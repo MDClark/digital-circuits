@@ -12,7 +12,8 @@ import java.awt.Image;
 public class LED extends javax.swing.JPanel {
 
     // Image representations of an LED
-    private Image onImage, offImage, currentImage;
+    private final Image onImage, offImage;
+    private Image currentImage;
 
     // Input to LED
     private Terminal input;

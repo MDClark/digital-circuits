@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Digital;
 
 import java.awt.Image;
@@ -16,9 +11,12 @@ import javax.swing.JPanel;
  */
 public class BitAdderComponent extends JPanel {
 
-    private BitAdderCircuit adder = new BitAdderCircuit();
-    private Image image;
+    private final BitAdderCircuit adder = new BitAdderCircuit();
+    private final Image image;
 
+    /**
+     * Creates a BitAdderComponent and sets it's image
+     */
     public BitAdderComponent() {
         java.net.URL url = getClass().getResource("images/Adder.gif");
         image = new javax.swing.ImageIcon(url).getImage();

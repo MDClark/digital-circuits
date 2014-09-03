@@ -81,13 +81,6 @@ public abstract class UnaryGate extends javax.swing.JPanel implements PropertyCh
         }
     }
 
-    /**
-     * TODO ---------------------------------------------------------------------------------------
-     * It seems that this method is for bound properties only, and we don't have any?
-     * Still not sure about this...
-     * 
-     * @param evt 
-     */
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
         recompute();

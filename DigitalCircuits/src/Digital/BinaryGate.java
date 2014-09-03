@@ -10,7 +10,7 @@ package Digital;
 public abstract class BinaryGate extends UnaryGate {
     
     // Additional input terminal (accompanied by Input0 inherited from UnaryGate)
-    private Terminal Input1;
+    private Terminal input1;
 
     /**
      * Constructor, calls parent constructor to set object image representation
@@ -22,27 +22,27 @@ public abstract class BinaryGate extends UnaryGate {
     }
 
     /**
-     * Get the value of Input1
+     * Get the value of input1
      *
-     * @return the value of Input1
+     * @return the value of input1
      */
     public Terminal getInput1() {
-        return Input1;
+        return input1;
     }
 
     /**
-     * Set the value of Input1
+     * Set the value of input1
      *
-     * @param Input1 new value of Input1
+     * @param input1 new value of input1
      */
-    public void setInput1(Terminal Input1) {
-        this.Input1 = Input1;
+    public void setInput1(Terminal input1) {
+        this.input1 = input1;
         
         recompute();
         
         // Do not add a listener if the value is null
-        if (Input1 != null) {
-            this.Input1.addPropertyChangeListener(this);
+        if (input1 != null) {
+            this.input1.addPropertyChangeListener(this);
         }
     }
 }
